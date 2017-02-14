@@ -4,10 +4,33 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-	<h1>hey</h1>
+
+	<div class = "postcard" id="pc">
+		<img src="./assets/0.JPG" id="pic">
+	</div>
+
+	<div class = "container">
+		<h2>Choose your photo</h2>
+		<img onclick="changepic('./assets/0.JPG');" src="./assets/0.JPG" class="img-circle">
+		<img onclick="changepic('./assets/1.JPG');" src="./assets/1.JPG" class="img-circle">
+		<img onclick="changepic('./assets/2.JPG');" src="./assets/2.JPG" class="img-circle">
+		<img onclick="changepic('./assets/3.JPG');" src="./assets/3.JPG" class="img-circle">
+		<img onclick="changepic('./assets/4.JPG');" src="./assets/4.JPG" class="img-circle">
+		<img onclick="changepic('./assets/5.JPG');" src="./assets/5.JPG" class="img-circle">
+		<img onclick="changepic('./assets/6.JPG');" src="./assets/6.JPG" class="img-circle">
+	</div>
+
+	<div class="send">
+		<button onclick="send();" type="button" class="btn btn-secondary">Send Postcard!</button>
+	</div>
+
 </body>
 
 </html>
