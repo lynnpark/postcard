@@ -1,5 +1,5 @@
 
-var currentPic = './assets/0.JPG';
+var currentPic = '0';
 
 function send(){ 
 	var canvas = document.getElementById("pc");
@@ -16,9 +16,10 @@ function send(){
 	});
 }
 
-function changepic(src){
+function changepic(num){
+	var src = './assets/' + num + '.JPG';
 	$('#pic').attr('src', src);
-	currentPic = src;
+	currentPic = num;
 }
 
 $(document).ready(function() {

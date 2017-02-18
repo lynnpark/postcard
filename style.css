@@ -11,6 +11,7 @@
 .postcard img {
 	width: 262px;
 	height: 392px;
+	float: left;
 }
 
 .img-circle {
@@ -24,5 +25,23 @@
 
 .send {
 	text-align: center;
-	padding: 50px;
+	padding: 20px;
+}
+
+.form-group {
+	float: right;	
+}
+
+#msg {
+	width: 250px;
+	height: 350px;
+
+}
+
+
+.input-group {
+	text-align: center;
+	padding: auto;
+	margin: auto;
+	width: 500px;
 }

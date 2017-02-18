@@ -14,23 +14,34 @@
 
 	<div class = "postcard" id="pc">
 		<img src="./assets/0.JPG" id="pic">
+		<div class="form-group">
+			<textarea class="form-control" id="msg"></textarea>
+		</div> 
 	</div>
 
 	<div class = "container">
 		<h2>Choose your photo</h2>
-		<img onclick="changepic('./assets/0.JPG');" src="./assets/0.JPG" class="img-circle">
-		<img onclick="changepic('./assets/1.JPG');" src="./assets/1.JPG" class="img-circle">
-		<img onclick="changepic('./assets/2.JPG');" src="./assets/2.JPG" class="img-circle">
-		<img onclick="changepic('./assets/3.JPG');" src="./assets/3.JPG" class="img-circle">
-		<img onclick="changepic('./assets/4.JPG');" src="./assets/4.JPG" class="img-circle">
-		<img onclick="changepic('./assets/5.JPG');" src="./assets/5.JPG" class="img-circle">
-		<img onclick="changepic('./assets/6.JPG');" src="./assets/6.JPG" class="img-circle">
+		<img onclick="changepic('0');" src="./assets/0.JPG" class="img-circle">
+		<img onclick="changepic('1');" src="./assets/1.JPG" class="img-circle">
+		<img onclick="changepic('2');" src="./assets/2.JPG" class="img-circle">
+		<img onclick="changepic('3');" src="./assets/3.JPG" class="img-circle">
+		<img onclick="changepic('4');" src="./assets/4.JPG" class="img-circle">
+		<img onclick="changepic('5');" src="./assets/5.JPG" class="img-circle">
+		<img onclick="changepic('6');" src="./assets/6.JPG" class="img-circle">
+	</div>
+
+	<div class = "container">
+		<h2>Enter recipient's email:</h2>
+		<div class="input-group">
+  			<input type="text" class="form-control" placeholder="example@test.com">
+		</div>
 	</div>
 
 	<div class="send">
-		<button onclick="send();" type="button" class="btn btn-secondary">Send Postcard!</button>
+		<button onclick="send();" type="button" class="btn btn-primary btn-lg">Send Postcard!</button>
 	</div>
 
 </body>
 
 </html>
+
